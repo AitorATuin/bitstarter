@@ -4,6 +4,10 @@ require! fs
 
 app = express.createServer express.logger()
 
+console.log('/static',  __dirname + '/public')
+
+app.use('/static', express.static(__dirname + '/public'))
+
 renderFile = (file) -> (.toString!) fs.readFileSync file 
 
 app.get '/', (req, res) -> renderFile "index.html" |> res.send _
