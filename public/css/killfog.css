@@ -1,0 +1,54 @@
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+  }
+  .linediv-l {
+    border-right: 1px white solid;
+  }
+  .linediv-r {
+    border-left: 1px white solid;
+  }
+}
+
+@media (max-width: 480px) {
+  .linediv-l {
+    border-bottom: 1px white solid;
+  }
+  .linediv-r {
+    border-botton: 1px white solid;
+  }
+}
+
+.heading, subheading {
+  text-align: center;
+}
+
+p.lead {
+
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.pitch {
+  padding: 2.5% 0%;
+}
+
+.order {
+  padding: 1% 0%;
+}
+
+.statistics, .thermometer, .social {
+  text-align: center;
+}
+
+.statistics h3, .statistics p {
+  color: white;
+}
+
+.actions {
+  background: #343434;
+  padding: 3% 0%;
+}
