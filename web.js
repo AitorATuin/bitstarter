@@ -6,6 +6,7 @@
   app = express.createServer(express.logger());
   console.log('/static', __dirname + '/public');
   app.use('/static', express['static'](__dirname + '/public'));
+  app.use('/static', express['static'](__dirname + '/bower_components/'));
   renderFile = function(file){
     return function(it){
       return it.toString();

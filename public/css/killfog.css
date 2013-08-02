@@ -26,6 +26,22 @@
   }
 }
 
+@media (max-width: 800px) {
+  .navbar .btn-navbar {
+    width: 20%;
+    float: right;
+    top: 1px;
+    position: relative;
+    font-size: 24px;    
+  }
+  a.brand.box-title {
+    //top: 3px;
+    //position: relative;
+    //font-size: 30px;
+    color: darkorange;
+  }
+}
+
 @media (max-width: 480px) {
   .navbar .btn-navbar {
     width: 20%;
@@ -44,7 +60,7 @@
     top: 3px;
     position: relative;
     font-size: 30px;
-    color: darkorange;
+   // color: darkorange;
   }
   .brand.box-title p {
     color: black;
