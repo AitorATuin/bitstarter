@@ -1,0 +1,23 @@
+{
+  "name": "testyo",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "git://github.com/Modernizr/Modernizr.git#~2.6.2",
+    "jquery": "git://github.com/components/jquery.git#~1.9.1",
+    "requirejs": "git://github.com/jrburke/requirejs.git#~2.1.4",
+    "sass-bootstrap": "git://github.com/jlong/sass-twitter-bootstrap.git#~2.3.0",
+    "bootstrap": "~3.0.0-rc1",
+    "components-font-awesome": "~3.2.1",
+    "jquery-knob": "~1.2.2",
+    "bootstrap-css": "~2.3.2",
+    "bootstrap-social-buttons": "*",
+    "greensock-js": "~1.9.8"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,191 @@
+@media (min-width: 980px) {
+  body {
+    width: 100%;
+  }
+  header {
+    background-image: url('/img/clouds1.png');
+    background-position-x: 0px;
+    height: 158px;
+  }
+
+  .brand.box-title h1 {
+    font-size: 60px;
+  }
+  #box-header .container {
+    padding-top: 30px;
+  }
+  .container {
+  //  width: 100%;
+  }
+  .linediv-l {
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+  }
+  .linediv-r {
+    border-left: 1px white solid;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar .btn-navbar {
+    width: 20%;
+    float: right;
+    top: 1px;
+    position: relative;
+    font-size: 24px;    
+  }
+  a.brand.box-title {
+    //top: 3px;
+    //position: relative;
+    //font-size: 30px;
+    color: darkorange;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .btn-navbar {
+    width: 20%;
+    float: right;
+    top: 1px;
+    position: relative;
+    font-size: 24px;
+  }
+  .brand.box-title {
+    /*top: 3px;
+    position: relative;
+    font-size: 30px;
+    color: darkorange;*/
+  }
+  a.brand.box-title {
+    top: 3px;
+    position: relative;
+    font-size: 30px;
+   // color: darkorange;
+  }
+  .brand.box-title p {
+    color: black;
+  }
+  .linediv-l {
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+  }
+  .linediv-r {
+    border-top: 1px white solid;
+  }
+  /*.box-title h1 {
+    text-align: center;
+    font-size: 40px;
+  }*/
+  #box-text img, #box-animation img {
+    width: 266px;
+    //height: 300px;
+  }
+}
+
+body {
+  background : -webkit-radial-gradient(left top,circle farthest-side, rgb(222, 235, 247) 22%, rgb(181, 196, 235) 40%, rgb(143,143,143) 92%);
+  background-repeat: no-repeat;
+}
+
+#box-header .container {
+  //padding-top: 30px;
+}
+
+#box-social {
+  position: relative;
+  top: -40px;
+}
+
+/* Branb box-title attributes */
+/* -- for every media */
+.brand {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: bold;
+}
+.brand.box-title h1 {
+  font-family: inherit; /* Inherits from .brand */
+  color: darkorange;
+}
+.brand.box-title p {
+  font-family: 'Lemon', sans-serif;
+}
+
+#footer {
+  height: 400px;
+  background: #636363;
+  border-top-style: inset;
+}
+
+#box-info {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-image: url('/img/grass1.png');
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+
+#box-animation, #box-text {
+  text-align: center;
+}
+
+#box-statistics {
+  text-align: center;
+}
+
+#box-statistics.well {
+  padding: 5px;
+  background-color: rgba(17, 17, 16, 0.69);
+  border: 4px solid rgb(226, 219, 219);
+  color: orange;
+  font-family: 'Lilita One', sans-serif;
+}
+
+#box-statistics.well h3 {
+  font-family: 'Lilita One', sans-serif;
+}
+
+#box-image {
+}
+
+.radialgradientTop {
+  height: 250px;
+  background: -moz-radial-gradient(50% 140%, farthest-side, #add5f7, #5389CC );
+  background: -webkit-gradient(radial, 50% 110%, 1, 50% 50%, 358, from(#ffffff), to(#add5f7));
+  /* opera, IE and other browsers cannot create radial gradients yet */
+}
+
+.uibox, .uibox div {
+}
+
+.heading, subheading, .box-image {
+  text-align: center;
+}
+
+p.lead {
+
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.pitch {
+  padding: 2.5% 0%;
+}
+
+.order {
+  padding: 1% 0%;
+}
+
+.statistics, .thermometer, .social {
+  text-align: center;
+}
+
+.statistics h3, .statistics p {
+  color: white;
+}
+
+.actions {
+  padding: 3% 0%;
+}

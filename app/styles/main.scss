@@ -1,0 +1,75 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+//@import 'sass-bootstrap/lib/bootstrap';
+@import "susy";
+@import "compass/css3";
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+.page {
+  // page acts as a container for our grid.
+  @include container;
+  //@include susy-grid-background;
+  @include border-box-sizing;
+
+  // header and footer are full-width by default.
+  header, footer { 
+    //clear: both;
+    @include span-columns(12,12);
+    @include border-radius(25px);
+
+    #kb-header {
+      @include span-columns(6, 12);
+      @include border-radius(25px);
+      //@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+    }
+    #kb-crowfunding {
+      //@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+      @include span-columns(6, 12);
+      #kb-progress {
+        @include span-columns(3,12);
+      }
+      #kb-brackets {
+        @include span-columns(2,12);
+      }
+      #kb-current-amount {
+        @include span-columns(2,12);
+      }
+      #kb-time-left {
+        @include span-columns(2,12);
+      }
+    }
+  }
+
+  // nav spans 3 columns of total 12.
+  //nav { @include span-columns(3,12); }
+
+  section {
+    // content spans the final (omega) 9 columns of 12.
+    @include span-columns(12 ,12);
+    
+    #kb-content {
+      @include span-columns(10,12);
+      #kb-text {
+        @include span-columns(4,12);
+        @include single-box-shadow;
+        //&:nth-child(1n) { @include omega; }
+      }
+      #kb-animation {
+        @include span-columns(3,12);
+        @include single-box-shadow;
+        //&:nth-child(1n) { @include omega; }
+      }
+    }
+
+        // main content spans 6 of those 9 columns.
+    .main { @include span-columns(6,9); }
+
+    // secondary content spans the final 3 (omega) of 9 columns.
+    .secondary { @include span-columns(3 omega,9); }
+  }
+}
